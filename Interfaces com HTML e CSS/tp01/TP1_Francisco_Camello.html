@@ -1,9 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <title>Teste de Performance 01</title>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Francisco Camello">
+        <meta name="description" content="Solução do primeiro teste de performance da disciplina Interfaces com HTML e CSS.">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            body {
+                background-color: moccasin;
+                margin: auto;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                width: fit-content;
+            }
+            
+            /* Style the header */
+            body header { 
+                margin-top: 30px;
+                text-align: center;
+                padding: 10px;
+            }
+            
+            /* Style the navigation menu */
+            body nav {
+                flex: 1;
+                display: flex;
+            }
+            
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                flex: 1; 
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                display: inline;
+                padding: 5px;
+                text-transform: uppercase;
+            }
+            
+            /* Style the content */
+            body main {
+                display: flex;
+            }
+
+            main article {
+                color:#573024;
+                width: 940px;
+                padding: 10px;
+            }
+
+            article h1 {
+                text-indent: 10px;
+                text-align: start;
+            }
+
+            article h2 {
+                text-align: start;
+                text-indent: 10px;
+            }
+
+            article p {
+                text-align: justify; 
+                text-indent: 20px; 
+                color: black;
+            }
+            
+            /* Style the footer */
+            body footer {
+                padding-top: 30px;
+            }
+
+            footer p {
+                text-align: center;
+                justify-content: center;
+            }
+        </style>
+
     </head>
+    
     <body>
-        
+        <header>
+            <img src="images/logo_kombi_coffee.svg" title="Logo da Kombi Coffee"  alt="Kombi Coffee">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">local</a></li>
+                <li><a href="#">cardápio</a></li>
+                <li><a href="#">eventos</a></li>
+                <li><a href="#">contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h1>O Café que chega até você</h1>
+                <img src="images/banner.jpg" title="Café fresco rodeado de grãos" alt="Café fresco">
+                <h2>Escolha o seu café</h2>
+                <p>Hoje em dia, café bom não é só aquele feito no coador de pano que nossas avós faziam, 
+                    um novo mundo se abre para nós em matéria de tipos de grãos, procedência, 
+                    tipos de torras e jeitos de preparar a bebida, que é tão popular na mesa dos brasileiros.</p>
+                <h2>Onde encontrar a loja</h2>
+                <p>O Kombi Coffee é móvel. <a href="https://www.google.com.br/maps">Veja onde</a> você pode encontrar a loja.</p>
+            </article>
+        </main>
+    
+        <footer>
+            <hr>
+            <p>Copyright©2022 CAMELLonCASE, Inc. All rights reversed.</p>
+        </footer>
+
     </body>
 </html>
