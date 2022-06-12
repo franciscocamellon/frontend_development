@@ -5,13 +5,13 @@ body {
     width: fit-content;
 }
 
-body header { 
+header { 
     margin-top: 30px;
     text-align: center;
     padding: 10px;
 }
 
-body nav {
+nav {
     flex: 1;
     display: flex;
 }
@@ -24,13 +24,13 @@ nav ul {
     justify-content: center;
 }
 
-nav li {
+nav ul li {
     display: inline;
     padding: 5px;
     text-transform: uppercase;
 }
 
-body main {
+main {
     display: flex;
 }
 
@@ -40,23 +40,23 @@ main article {
     padding: 10px;
 }
 
-article h1 {
+main article h1 {
     text-indent: 10px;
     text-align: start;
 }
 
-article h2 {
+main article h2 {
     text-align: start;
     text-indent: 10px;
 }
 
-article p {
+main article p {
     text-align: justify; 
     text-indent: 20px; 
     color: black;
 }
 
-body footer {
+footer {
     padding-top: 30px;
 }
 
