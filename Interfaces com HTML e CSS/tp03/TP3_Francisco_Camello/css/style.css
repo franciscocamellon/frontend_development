@@ -11,6 +11,13 @@ header {
     padding: 10px;
 }
 
+.h1-display-none {
+    display: none;
+}
+h1 {
+    font-size: 2em;
+}
+
 nav {
     flex: 1;
     display: flex;
