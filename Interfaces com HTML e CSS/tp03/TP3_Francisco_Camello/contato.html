@@ -33,25 +33,21 @@
 
             <main>
                 <section id="contato">
-                    
-                    <form name="meu_form">
-
-                        <h1>Entre em contato</h1>
+                    <div class="content">
+                        <h3 id="form-title">Entre em contato</h3>
+                        <form class="form" method="post" action="">
+                            
+                            <input class="field" type="text" id="nomeid" placeholder="Digite seu nome" required="required" name="nome" />
+                            
+                            <input class="field" type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+                            
+                            <input class="field" type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
                         
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+                            <textarea class="field" placeholder="Deixe sua mensagem"></textarea>
                         
-                        <label for="fone">Fone</label>
-                        <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
-                        
-                        <label for="email">Email</label>
-                        <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-                        
-                      
-                        <textarea placeholder="Deixe sua opnião"></textarea>
-                      
-                        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-                      </form>
+                            <input class="field" type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+                        </form>
+                    </div>
                 </section>
             </main>
         

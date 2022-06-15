@@ -1,47 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Cardápio</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Francisco Camello">
-        <meta name="description" content="Solução do terceiro teste de performance da disciplina Interfaces com HTML e CSS.">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-        <script src="modernizr.js"></script>
-    </head>
-    
-    <body>
-        <div id="container">
-            <header>
-                <h1 class="h1-display-none">Kombi Coffee</h1>
-                <figure>
-                    <img src="images/logo_kombi_coffee.svg" title="Logo da Kombi Coffee"  alt="Kombi Coffee">
-                </figure>
-            </header>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="local.html">local</a></li>
-                    <li><a href="cardapio.html">cardápio</a></li>
-                    <li><a href="eventos.html">eventos</a></li>
-                    <li><a href="contato.html">contato</a></li>
-                </ul>
-            </nav>
+<head>
+    <title>Cardápio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Francisco Camello">
+    <meta name="description"
+        content="Solução do terceiro teste de performance da disciplina Interfaces com HTML e CSS.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <script src="modernizr.js"></script>
+</head>
 
-            <main>
-                <section id="contato">
-                    
-                    
-                </section>
-            </main>
-        
-            <footer>
-                <hr>
-                <p>Copyright©2022 CAMELLonCASE, Inc. All rights reversed.</p>
-            </footer>
-        </div>
-    </body>
+<body>
+    <div id="container">
+        <header>
+            <h1 class="h1-display-none">Kombi Coffee</h1>
+            <figure>
+                <img src="images/logo_kombi_coffee.svg" title="Logo da Kombi Coffee" alt="Kombi Coffee">
+            </figure>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="local.html">local</a></li>
+                <li><a href="cardapio.html">cardápio</a></li>
+                <li><a href="eventos.html">eventos</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="table">
+                <table id="cardapio">
+                    <tr class="row">
+                        <th>Foto</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr class="row">
+                        <td><img src="images/cafe-quente.jpg" title="Logo da Kombi Coffee" alt="Kombi Coffee"></td>
+                        <td >
+                            <p id="p-title">Cafés quentes</p>
+                            <p>Importamos grãos diretamente da Indonésia</p>
+                        </td>
+                        <td>R$ 5,00</td>
+                    </tr>
+                    <tr class="row">
+                        <td><img src="images/cafe-gelado.jpg" title="Logo da Kombi Coffee" alt="Kombi Coffee"></td>
+                        <td >
+                            <p id="p-title">Cafés gelados</p>
+                            <p>Nosso frapuccino é famoso até na Itália!</p>
+                        </td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr class="row">
+                        <td><img src="images/cafe-alcoolico.jpg" title="Logo da Kombi Coffee" alt="Kombi Coffee"></td>
+                        <td>
+                            <p id="p-title">Cafés alcoólicos</p>
+                            <p>Aproveite para se aquecer no inverno com nossos deliciosos cafés.</p>
+                        </td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr class="row">
+                        <td><img src="images/chocolate.jpg" title="Logo da Kombi Coffee" alt="Kombi Coffee"></td>
+                        <td>
+                            <p id="p-title">Chocolates</p>
+                            <p>Mesmo que a sua preferência não seja café, nós temos algo para você.</p>
+                        </td>
+                        <td>R$ 6,00</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="last-row">Nossos cafés são sempre produzidos com grãos orgânicos.</td>
+                    </tr>
+
+                </table>
+
+
+            </section>
+        </main>
+
+        <footer>
+            <hr>
+            <p>Copyright©2022 CAMELLonCASE, Inc. All rights reversed.</p>
+        </footer>
+    </div>
+</body>
+
 </html>
