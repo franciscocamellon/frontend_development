@@ -1,4 +1,4 @@
-let questionContainer = document.getElementById('q3');
+let questionThreeContainer = document.getElementById('q3');
 
 function createHtmlElement(tag, parent, properties) {
    
