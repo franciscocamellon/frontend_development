@@ -15,7 +15,7 @@ function createHtmlElement(tag, parent, properties) {
 
 let label = createHtmlElement('label', questionTwoContainer, {});
 let factorialInput = createHtmlElement('input', questionTwoContainer, { 'type': 'number', 'placeholder': 'maximo', 'required': 'true' });
-let factorialButton = createHtmlElement('input', questionTwoContainer, { 'type': 'button', 'value': 'Calcular', 'onclick': 'calculate()' });
+let factorialButton = createHtmlElement('input', questionTwoContainer, { 'type': 'button', 'value': 'Fatorial', 'onclick': 'calculateFactorial()' });
 
 function createAnswer(number, factorial) {
 
@@ -24,13 +24,13 @@ function createAnswer(number, factorial) {
 
 }
 
-function calculate() {
+function calculateFactorial() {
     var number = Number(factorialInput.value);
     let factorial = 1;
     if (number == 0 || number == 1) {
         createAnswer(number, factorial)
         return factorial;
-        
+
     } else {
         for (var i = number; i >= 1; i--) {
             factorial = factorial * i;

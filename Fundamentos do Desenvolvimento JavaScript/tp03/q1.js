@@ -17,11 +17,13 @@ let minInput = createHtmlElement('input', questionContainer, {'type':'number', '
 let maxInput = createHtmlElement('input', questionContainer, {'type':'number', 'placeholder':'maximo', 'required': 'true'});
 let calculateButton = createHtmlElement('input', questionContainer, {'type':'button', 'value':'Calcular', 'onclick':'calculate()'});
 
-function createAnswer(min, max, listOfNumbersLength) {
-
+function createQ1Answer(min, max, listOfNumbersLength) {
     let answerDiv = createHtmlElement('div', questionContainer, {})
-    answerDiv.innerText = `Existem ${listOfNumbersLength} números múltiplos de 2 e 3 entre ${min} e ${max}.`
-
+    if (listOfNumbersLength > 0) {
+        answerDiv.innerText = `Existem ${listOfNumbersLength} números múltiplos de 2 e 3 entre ${min} e ${max}.`
+    } else {
+        answerDiv.innerText = `Não existem números múltiplos de 2 e 3 entre ${min} e ${max}.`
+    }
 }
 
 function calculate() {
@@ -36,7 +38,7 @@ function calculate() {
             listOfNumbers.push(min);
         }
     };
-    createAnswer(minInput.value, maxInput.value, listOfNumbers.length)
+    createQ1Answer(minInput.value, maxInput.value, listOfNumbers.length)
     return listOfNumbers.length
     
 };
