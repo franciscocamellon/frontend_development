@@ -63,7 +63,7 @@ class Student {
 }
 
 function createHtmlElement(tag, parent, properties) {
-   
+    let divContainer = document.createElement('div');
     let htmlElement = document.createElement(tag);
     if (properties) {
         Object.entries(properties).forEach(([key, value]) => {
@@ -71,30 +71,13 @@ function createHtmlElement(tag, parent, properties) {
         });
     }
     
-    parent.appendChild(htmlElement);
+    divContainer.appendChild(htmlElement);
+    parent.appendChild(divContainer);
     return htmlElement
 };
 
-let reportButton = createHtmlElement('input', questionThreeContainer, { 'type': 'button', 'value': 'Relatório', 'onclick': 'buildReport()' });
-
-function createQ3Answer(number, factorial) {
-
-    let q3AnswerDiv = createHtmlElement('div', questionThreeContainer, {})
-    q3AnswerDiv.classList.add("table")
-    q3AnswerDiv.innerText = `O fatorial de ${number} é ${factorial}.`
-
-}
-
-let reportTable = createHtmlElement('table', questionThreeContainer, {});
-let titleRow = createHtmlElement("tr", reportTable, {});
-reportTable.appendChild(titleRow)
-
-title = ["Aluno", "Nota", "Status"]
-
-for (let index = 0; index < title.length; index++) {
-    let tableTitle = createHtmlElement("th", titleRow, {});
-    tableTitle.innerText = title[index];
-}
+let reportButton = createHtmlElement('input', questionThreeContainer, { 'class': 'input-button', 'type': 'button', 'value': 'Relatório', 'onclick': 'buildReport()' });
+let reportTable = createHtmlElement('table', questionThreeContainer, {'class': 'table'});
 
 function arrayOf(size, element) {
     var studentsList = [];
@@ -131,6 +114,17 @@ function calculateStatistcs(firstList, secondList) {
 }
 
 function buildReport() {
+
+    let titleRow = createHtmlElement("tr", reportTable, {});
+    reportTable.appendChild(titleRow)
+
+    title = ["Aluno", "Nota", "Status"]
+
+    for (let index = 0; index < title.length; index++) {
+        let tableTitle = document.createElement("th");
+        tableTitle.innerText = title[index];
+        titleRow.appendChild(tableTitle)
+    }
    
     var list = arrayOf(21, Student);
     let statistics = buildStatistcs(list);
@@ -152,7 +146,7 @@ function buildReport() {
         
     });
     
-    let statisticsRow = createHtmlElement("tr", reportTable, {});
+    let statisticsRow = createHtmlElement("tr", reportTable, {'class': 'statistics'});
     reportTable.appendChild(statisticsRow)
 
     let passed = createHtmlElement('td', reportTable, {});
