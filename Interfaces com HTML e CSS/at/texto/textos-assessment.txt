@@ -1,0 +1,81 @@
+dados abertos
+
+
+Início
+Deputados
+Partidos
+Bancadas
+Notícias
+Plenária
+Contato
+Assessment
+
+
+Quem são os deputados
+Conheça os deputados, seus partidos, e legislaturas
+
+
+Deputados
+Consulte aqui os deputados da legislatura atual
+
+Fulano de tal
+(REDE-MG)
+Legislaturas em que exerceu mandato: 56°
+Particdos pelos quais já foi deputado: REDE, PL, PT
+
+
+Partidos
+Consulte aqui os partidos existentes
+
+Partido XPTO
+
+
+Bancadas
+Principais bancadas do congresso
+
+Partido/Bloco	Bancada	Líder/ Representante	Nome do partido/ Bloco
+PL	77	Altineu Cortês	Partido Liberal
+PT	56	Reginaldo Lopes	Partido dos Trabalhadores
+PP	55	André Fufuca	Progressistas
+União	55	Elmar Nascimento	União Brasil
+PSD	47	Antônio Brito	Partido Social Democrático
+REPUBLICANOS	43	Vinícius Carvalho	Republicanos
+MDB	37	Isnaldo Bulhões Jr.	Movimento Democrático Brasileiro
+Total	370
+
+Acesse a lista completa de bancadas
+
+
+Notícias
+
+Câmara discute mudanças em política de preços da Petrobrás
+A Câmara dos Deputados analisa 26 projetos que podem mudar as regras de composição de preços de combustíveis praticados pela Petrobras. Entenda como funciona a política de preços da empresa.
+Fonte: Agência Câmara de Notícias
+
+Acesse mais notícias
+
+
+Plenária: assista as sessões
+
+Link vídeo: https://www.youtube.com/watch?v=dHnzc9LfSps
+AGORA: Sessão para a votação de propostas legislativas
+
+
+Contato
+Nome
+E-mail
+Mensagem
+
+
+Fale Conosco
+Deixe-nos suas críticas, elogios e sugestões
+
+
+Destaques
+Perguntas Frequentes
+Acesso à Informação
+Transparência na Câmara
+Carta de serviços ao cidadão
+
+
+© Instituto Infnet - Assessment Interfaces com HTML e CSS
